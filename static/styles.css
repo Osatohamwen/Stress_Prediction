@@ -1,0 +1,121 @@
+
+/* General styles */
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url('sb.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 90%; /* Wider on small/mobile screens */
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+
+h2 {
+    font-family: 'Cinzel Decorative', cursive; /* Apply the Desert font */
+    font-size: 2em; /* Adjust the font size */
+    color: #333; /* Adjust the font color */
+}
+
+/* Form styles */
+form {
+    background-color: transparent; /* Transparent background for form */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #2e2e2e;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6faff4;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    border: 2px solid #6faff4;
+    color: #6faff4;
+}
+
+
+/* Result styles */
+.result-container {
+    width: 40%; /* Decrease the width to 60% on the result page */
+    margin: auto;
+    background-color: transparent; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.result-text {
+    font-size: 18px;
+    color: #333;
+}
+.center-button {
+    display: flex;
+    justify-content: center;
+}
+
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: 700;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    outline: 2px solid #fff;
+    background: transparent;
+}
+
+/* For larger screens (tablets and above), set narrower container */
+@media (min-width: 768px) {
+    .container {
+        width: 60%; /* Narrower on bigger screens */
+    }
+}
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+</head>
+<body>
+    <div class="container">
+        <h2 align="center">Stress Level Prediction Result</h2>
+        <p class="result-text" align="center">Based on the inputs, Predicted Stress Level: <strong>{{ stress_level }}</strong></p>
+        <div class="center-button">
+            <a href="/" class="btn btn-primary">Try Again</a>
+        </div>
+    </div>
+</body>
+</html>
